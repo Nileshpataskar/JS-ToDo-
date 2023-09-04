@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./dance.png">
+    <link rel="icon" href="./dance.png" />
     <link rel="stylesheet" href="./style.css" />
     <title>Todo</title>
   </head>
@@ -13,42 +13,47 @@
       <div class="single-task">
         <div onclick="ToggleSingleTaskModal()" class="plus">Back</div>
         <p id="single-task-name" class="plus"></p>
-        <div >
-          
-          <img src="./add_circle.svg" alt=""></div>
+        <p id="add-option2" class="add-option">
+          <img src="./add_circle.svg" /><span
+            class="addnew"
+            style="color: #000; margin-left: 20px"
+            >Add New Item</span
+          >
+        </p>
       </div>
-      <div id="titleBox" class="titleBox">
-      </div>
+      <div id="titleBox" class="titleBox"></div>
     </div>
 
+    <div class="task-modal" id="task-modal">
+      <div class="box">
+        <div style="display: flex; justify-content: center">
+          <h2 style="color: #e94b41; font-size: 30px">Add New List</h2>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <input
+            type="text"
+            width="220px"
+            height="80px"
+            id="task-input"
+            class="inputBox"
+          />
+        </div>
 
-      <div class="task-modal" id="task-modal">
-        <div class="box">
-          <div style="display: flex; justify-content: center">
-            <h2 style="color: #e94b41; font-size: 30px">Add New List</h2>
-          </div>
-          <div style="display: flex; justify-content: center">
-            <input
-              type="text"
-              width="220px"
-              height="80px"
-              id="task-input"
-              class="inputBox"
+        <!-- Add and close buttons in the modal -->
+        <div class="add_close_btn">
+          <div class="addBtn btn" onclick="addTask()" id="task-submit">Add</div>
 
-            />
-          </div>
-
-          <!-- Add and close buttons in the modal -->
-          <div class="add_close_btn">
-            <div class="addBtn btn" onclick="addTask()" id="task-submit">Add</div>
-            
-            <div class="closeBtn btn" onclick="ToggleTaskModal()" id="modal-close">Close</div>
+          <div
+            class="closeBtn btn"
+            onclick="ToggleTaskModal()"
+            id="modal-close"
+          >
+            Close
           </div>
         </div>
       </div>
-
-
     </div>
+
     <div class="item-modal" id="item-modal">
       <div class="box">
         <div style="display: flex; justify-content: center">
@@ -61,26 +66,35 @@
             height="80px"
             id="item-input"
             class="inputBox"
-
           />
         </div>
 
         <!-- Add and close buttons in the modal -->
         <div class="add_close_btn">
           <div class="addBtn btn" onclick="addItem()" id="item-submit">Add</div>
-          
-          <div class="closeBtn btn" onclick="ToggleItemModal()" id="modal-close">Close</div>
+
+          <div
+            class="closeBtn btn"
+            onclick="ToggleItemModal()"
+            id="modal-close"
+          >
+            Close
+          </div>
         </div>
       </div>
     </div>
 
-
-
     <div class="app-container">
       <div class="topBar">
-        <h1><span class="todo">Tasks</span><span style="color: #000;">List</span></h1>
+        <h1>
+          <span class="todo">Tasks</span><span style="color: #000">List</span>
+        </h1>
         <p id="add-option" class="add-option">
-          <img src="./add_circle.svg" /><span class="addnew" style="color: #000;margin-left: 20px;">Add New Item</span> 
+          <img src="./add_circle.svg" /><span
+            class="addnew"
+            style="color: #000; margin-left: 20px"
+            >Add New Item</span
+          >
         </p>
       </div>
       <div class="topitem">
