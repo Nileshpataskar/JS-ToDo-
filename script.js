@@ -2,22 +2,40 @@ const clickable = document.getElementById("add-option");
 clickable.addEventListener("click", ToggleTaskModal);
 
 const clickable2 = document.getElementById("add-option2");
+<<<<<<< HEAD
 clickable2.addEventListener("click", ToggleTaskModal);
+=======
+clickable2.addEventListener("click", ToggleTaskModal2);
+>>>>>>> e58ea0139cd3b1bd00aa302e554ef78f0e186d4c
 
 var boxIndex = -1;
 singleTaskIndex = -1;
 
 Todos = [];
 
-// function singlerenderItems(){
-//   document.getElementById("titleBox").innerHTML = "";
-//   // document.getElementById('titleBox').innerHTML= taskCard.innerHTML;
-//   document.getElementById("titleBox").appendChild(taskCard);
-// }
+
 
 renderItems();
 // singlerenderItems();
 function ToggleTaskModal() {
+  const taskInput = document.getElementById("task-input");
+  taskInput.value = "";
+
+  //if there were no prior element remove the text
+
+  document.getElementById("list").style.display = "none";
+
+  // Acess the Element with the ID as "modal"
+  const modal = document.getElementById("task-modal");
+  // console.log(modal.style.display);
+  if (modal.style.display === "block") {
+    modal.style.display = "none";
+  } else {
+    modal.style.display = "block";
+  }
+  taskInput.focus();
+}
+function ToggleTaskModal2() {
   const taskInput = document.getElementById("task-input");
   taskInput.value = "";
 
