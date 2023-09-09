@@ -1,6 +1,6 @@
 body {
-  margin: 30px 100px 0px 100px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
   /* color: white; */
 }
 
@@ -68,8 +68,9 @@ body {
 .single-task {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   /* align-items: center; */
-  padding: 40px;
+  /* padding: 40px; */
 }
 .single-task-modal {
   background-color: #fff;
@@ -105,7 +106,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .taskCard {
@@ -149,10 +150,10 @@ body {
 .titleBox {
   display: flex;
   justify-content: center;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .deletebtn {
   height: 30px;
@@ -276,11 +277,21 @@ body{
   h1{
     font-size: 24px;
   }
+
+  
+#single-task-name {
+  color: black;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 25px;
+}
   .addnew{display: none;}
   .topBar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
     color: rgb(255, 255, 255);
     font-size: 20px;
     align-items: center;

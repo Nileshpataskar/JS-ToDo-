@@ -1,6 +1,9 @@
 const clickable = document.getElementById("add-option");
 clickable.addEventListener("click", ToggleTaskModal);
 
+const clickable2 = document.getElementById("add-option2");
+clickable2.addEventListener("click", ToggleTaskModal);
+
 var boxIndex = -1;
 singleTaskIndex = -1;
 
