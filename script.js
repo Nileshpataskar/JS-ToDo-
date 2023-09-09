@@ -2,11 +2,7 @@ const clickable = document.getElementById("add-option");
 clickable.addEventListener("click", ToggleTaskModal);
 
 const clickable2 = document.getElementById("add-option2");
-<<<<<<< HEAD
 clickable2.addEventListener("click", ToggleTaskModal);
-=======
-clickable2.addEventListener("click", ToggleTaskModal2);
->>>>>>> e58ea0139cd3b1bd00aa302e554ef78f0e186d4c
 
 var boxIndex = -1;
 singleTaskIndex = -1;
