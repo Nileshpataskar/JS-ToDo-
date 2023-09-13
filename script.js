@@ -166,6 +166,9 @@ function renderItems() {
         itemList.style.flex = "1";
         itemList.style.listStyleType = "disc";
         itemList.style.lineHeight = "35px";
+        itemList.style.overflowY="auto"
+        itemList.style.maxHeight="200px"
+
 
         value.items.map((item) => {
             const markBtn = document.createElement("p");
